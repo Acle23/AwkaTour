@@ -1,0 +1,46 @@
+.ticket-section {
+  max-width: 1440px;
+  width: 85%;
+  margin: auto;
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 620px) {
+  .ticket-section {
+    padding-top: 130px;
+  }
+}
+
+.head {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 3ch;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding: 4ch;
+  border: 1px solid #000;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.content-box {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+.note {
+  margin-top: 4ch;
+}
+
+.count {
+  margin-top: 2ch;
+}

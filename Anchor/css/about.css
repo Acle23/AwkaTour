@@ -1,0 +1,43 @@
+.about-section {
+    max-width: 1440px;
+    width: 85%;
+    margin: auto;
+    padding-top: 150px;
+}
+
+@media screen and (max-width: 620px) {
+    .about-section {
+        padding-top: 130px;
+    }
+}
+
+.head {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 3ch;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 4ch;
+    border: 1px solid #000;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.content-box {
+    max-width: 45rem !important;
+}
+
+h2 {
+    margin-bottom: 1ch;
+}
+
+.line1 {
+    border: 0.8px solid #000 !important;
+    margin-top: 2ch;
+    margin-bottom: 2ch;
+}

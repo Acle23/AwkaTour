@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+}
+
+div {
+  display: block;
+}
+
+.header {
+  position: fixed;
+  top: 0rem;
+  left: auto;
+  right: 0rem;
+  width: 100%;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  z-index: 1100;
+}
+
+.header-container {
+  position: relative;
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 620px) {
+  .header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+.nav-wrapper {
+  max-width: 1440px;
+  width: 88%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  color: blueviolet;
+}
+
+@media screen and (max-width: 620px) {
+  .nav-wrapper {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .right-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+.nav-link {
+  margin-right: 3rem;
+  min-width: 4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 11px 8px;
+}
+
+.nav-link:hover {
+  background-color: rgba(25, 118, 210, 0.1);
+}
+
+ul .nav-link {
+  position: relative;
+  cursor: pointer;
+}
+
+a.active::after {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: blueviolet;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  animation: underline 0.5s linear;
+}
+
+@keyframes underline {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-link {
+    display: none;
+  }
+}
+.root2 {
+  max-width: 1440px;
+  width: 85%;
+  margin: auto;
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 620px) {
+  .root2 {
+    padding-top: 130px;
+  }
+}
+.section1-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  color: #000;
+  padding: 4ch;
+  border: 1px solid #000;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 620px) {
+  .section1-wrapper {
+    background-image: none;
+  }
+  .section1-wrapper .write-up {
+    font-size: 20px !important;
+  }
+  .section1-wrapper .btn1 {
+    font-size: 16px !important;
+    min-width: 8rem !important;
+  }
+}
+.section1-content {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1260px) {
+  .section1-content {
+    max-width: 50%;
+  }
+}
+.write-up {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  max-width: 50ch;
+}
+
+.slant {
+  color: blueviolet;
+  font-style: italic;
+}
+
+.btn1-wrapper {
+  margin-top: 5ch;
+}
+.btn1-wrapper .btn1 {
+  padding: 2ch;
+  min-width: 10rem;
+  border: none;
+  border-radius: 6px;
+  background-color: blueviolet;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn1 {
+  font-weight: 600;
+}
+
+footer {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+}
+
+.footer {
+  margin-top: 150px;
+  max-width: 1440px !important;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 55px;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-container {
+    text-align: center;
+    flex-direction: column;
+  }
+  .footer-container .foot-logo {
+    margin-right: 0px;
+  }
+}
+.foot-logo {
+  margin-right: 6ch;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  h4 {
+    margin-top: 20px;
+  }
+}
+.w-line {
+  color: blueviolet;
+}
+
+.line {
+  margin: auto;
+  opacity: 0.3;
+  border: 0.8px solid #fff;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav-wrapper #hamburger-icon {
+  display: none;
+}
+
+.nav-wrapper .mylinks {
+  color: white;
+  display: block;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+.nav-wrapper a.icon {
+  background: #000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}/*# sourceMappingURL=style.css.map */
