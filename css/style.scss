@@ -35,7 +35,7 @@ div {
   width: 100%;
   padding-top: 0rem;
   padding-bottom: 1rem;
-  background-color: #ffffff;
+  background-color: transparent;
   box-sizing: border-box;
   z-index: 1100;
 }
@@ -78,6 +78,7 @@ div {
   font-size: 2rem;
   margin-left: 135px;
   display: none;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -97,7 +98,6 @@ div {
     z-index: 10;
     flex-direction: column;
     padding-top: 5rem;
-    // justify-content: center;
     align-items: flex-start;
     background-color: #000;
     transition: top 1s ease;
@@ -181,17 +181,15 @@ a.active::after {
   }
 }
 
-// @media screen and (max-width: 620px) {
-//   .nav-link {
-//     display: block;
-//   }
-// }
-
 .root2 {
   max-width: 1440px;
-  width: 85%;
+  width: 100%;
+  height: 100vh;
   margin: auto;
   padding-top: 150px;
+  background-image: url('/imgs/360_F_442063430_OjLo5sHK0twuUk2hCGWpjLphEHiLcamL.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (max-width: 620px) {
@@ -205,23 +203,14 @@ a.active::after {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
-  // background-image: url("/Anchor/imgs/lady1.jpg");
-  // background-repeat: no-repeat;
-  // background-size: contain;
-  // background-position: right;
-  color: #000;
+  color: #fff;
   padding: 4ch;
-  border: 1px solid #000;
-  border-radius: 6px;
   box-sizing: border-box;
 }
 
 @media screen and (max-width: 620px) {
   .section1-wrapper {
     background-image: none;
-    .write-up {
-      font-size: 20px !important;
-    }
     .btn1 {
       font-size: 16px !important;
       min-width: 8rem !important;
@@ -241,22 +230,25 @@ a.active::after {
 }
 
 .write-up {
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 700;
   letter-spacing: 1px;
-  max-width: 50ch;
+  text-transform: uppercase;
+  max-width: 40ch;
+  text-align: center;
 }
 
 .slant {
   color: blueviolet;
-  font-style: italic;
 }
 
 .btn1-wrapper {
+  display: flex;
+  justify-content: center;
   margin-top: 5ch;
   .btn1 {
     padding: 2ch;
-    min-width: 10rem;
+    min-width: 8rem;
     border: none;
     border-radius: 6px;
     background-color: blueviolet;
@@ -278,7 +270,7 @@ footer {
 }
 
 .footer {
-  margin-top: 150px;
+  // margin-top: 150px;
   max-width: 1440px !important;
   width: 100%;
   margin-right: auto;
