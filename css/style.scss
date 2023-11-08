@@ -74,6 +74,56 @@ div {
   color: blueviolet;
 }
 
+.openMenu {
+  font-size: 2rem;
+  margin-left: 120px;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-wrapper .mainMenu .closeMenu , .icon i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 620px) {
+  .nav-wrapper .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    padding-top: 5rem;
+    // justify-content: center;
+    align-items: flex-start;
+    background-color: #000;
+    transition: top 1s ease;
+    display: none;
+  }
+  .nav-wrapper .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+  }
+  .nav-wrapper .openMenu {
+    display: block;
+  }
+  .nav-wrapper .mainMenu a:hover {
+    background: none;
+    color: blueviolet;
+    font-size: 1.6rem;
+  }
+  .nav-link {
+    color: #fff !important;
+    display: block;
+  }
+}
+
 @media screen and (max-width: 620px) {
   .nav-wrapper {
     width: 100%;
@@ -131,11 +181,11 @@ a.active::after {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .nav-link {
-    display: none;
-  }
-}
+// @media screen and (max-width: 620px) {
+//   .nav-link {
+//     display: block;
+//   }
+// }
 
 .root2 {
   max-width: 1440px;
