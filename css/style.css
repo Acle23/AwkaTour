@@ -233,6 +233,11 @@ a.active::after {
   color: blueviolet;
 }
 
+.scribe {
+  margin-top: 1rem;
+  text-align: center;
+}
+
 .btn1-wrapper {
   display: flex;
   justify-content: center;
